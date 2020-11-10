@@ -61,11 +61,13 @@ Use the inning function below to do the following:
   For example: invoking inning() should return a numerical score value of 0, 1, or 2
 */
 
-function inning(/*Code Here*/){
+  function inning(score){
 
-    /*Code Here*/
+  score = 3; 
+  return Math.floor(Math.random() * Math.floor(score));
 
 }
+
 
 /* Task 3: finalScore()
 Use the finalScore function below to do the following:
@@ -80,9 +82,21 @@ For example: invoking finalScore(inning, 9) might return this object:
 }
 */ 
 
-function finalScore(/*code Here*/){
+function finalScore(inning, num){
 
-  /*Code Here*/
+num = 9  
+let board = {
+  Home: 0,
+  Away: 0,
+}
+
+
+  for (var inning = 1; inning >= num; i++){
+     board.home + inning(score)
+     board.away + inning(score)
+  }
+
+return board;
 
 }
 
@@ -91,9 +105,21 @@ function finalScore(/*code Here*/){
 // the function should take the inning function as an argument 
 // it should return an object with with a score for home and a score for away that that populates from invoking the inning callback. */
 
-function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
+
+function getInningScore(inning) {
+
+inning = 0
+let nen = {
+  Home: inning,
+  Away: inning
 }
+
+
+return nen;
+
+}
+
+
 /* Task 5: scoreboard()
 Use the scoreboard function below to do the following:
   1. Receive a callback function, that you create, called `getInningScore`
@@ -138,9 +164,30 @@ Use the scoreboard function below to do the following:
   */
 
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(inning, score) {
+  
+
+     
+   score = Math.floor(Math.random() * Math.floor(score));
+  
+
+   let num = 9  
+    let board = {
+      inning: 0,
+      Home: 0,
+      Away: 0,
+     
+    }
+  
+      for (var inning = 1; inning >= num; inning++){
+         board.inning + count++;
+         board.home + score;
+         board.away + score;
+          
+      }
+    return scoreboard;
 }
+
 
 
 
